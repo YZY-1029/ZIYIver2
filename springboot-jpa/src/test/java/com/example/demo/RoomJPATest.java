@@ -14,7 +14,7 @@ public class RoomJPATest {
 
 	@Autowired
 	private RoomRepository roomRepository;
-	
+	//00000
 	@Test
 	public void testRoomAdd() {
 		Scanner scanner = new Scanner(System.in);
