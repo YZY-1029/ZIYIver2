@@ -35,7 +35,7 @@ DELETE /rest/room/{roomId} 刪除指定房間    roomId (路徑參數，房間 I
 
 @RestController
 @RequestMapping(value = {"/rest/room", "/rest/rooms"})
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:8002"}, allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:8002"}, allowCredentials = "true")  // 允許另一個host 為 8002 的專案有權限使用
 public class RoomRestController {
 	
 	@Autowired
