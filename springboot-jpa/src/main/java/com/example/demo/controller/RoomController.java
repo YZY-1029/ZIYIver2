@@ -44,7 +44,7 @@ public class RoomController {
 	@GetMapping
 	public String getRooms(Model model, @ModelAttribute RoomDto roomDto) { // 不想建立初始值的話可以用 @ModelAttribute(可寫可不寫) RoomDto roomDto
 		//RoomDto roomDto = new RoomDto();
-		List<RoomDto> roomDtos = roomService.findAllRooms();
+		List<RoomDto> roomDtos = roomService.findAllRooms();    // 因為 findAllRooms() 的傳回型態是 List<RoomDto> 所以 roomDtos 的型態也是 List<RoomDto> 
 		//model.addAttribute("roomDto", roomDto);
 		model.addAttribute("roomDtos", roomDtos);
 		return "room/room";
