@@ -22,8 +22,10 @@ public class LoginRestFilter extends HttpFilter {
 			String method = request.getMethod();
 			
 	        // 開放 GET 查詢
-	        if ("GET".equalsIgnoreCase(method)) {
-	            chain.doFilter(request, response);
+	        if ("GET".equalsIgnoreCase(method)) {     // 這段是比較請求是否為 GET
+	            chain.doFilter(request, response);    // 這段式讓他 過的意思
+	            System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa11111111111111111111111111111111111111111111111111111111111111111111111111111111aaaaaaaaaaaaaaaaaaaaaaaaa");
+	            System.out.println(method);
 	            return;
 	        }
 	        
@@ -31,6 +33,7 @@ public class LoginRestFilter extends HttpFilter {
 	        // 非 GET 時驗證登入狀態
 	        if (session != null && session.getAttribute("userCert") != null) {
 	            chain.doFilter(request, response); // 已登入，放行
+	            System.out.println("llllllllllllllllllloooooooooooooooooooooooooggggggggggggggggggg");
 	        } else {
 	            // 未登入，回傳 401
 	            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
