@@ -21,7 +21,7 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/rest")
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:8002"}, allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost:5173/", "http://localhost:8002"}, allowCredentials = "true")
 public class LoginRestController {
 	
 	@Autowired

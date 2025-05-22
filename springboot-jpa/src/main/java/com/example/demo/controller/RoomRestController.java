@@ -35,7 +35,7 @@ DELETE /rest/room/{roomId} 刪除指定房間    roomId (路徑參數，房間 I
 
 @RestController
 @RequestMapping(value = {"/rest/room", "/rest/rooms"})
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:8002"}, allowCredentials = "true")  // 允許另一個host 為 8002 的專案有權限使用
+@CrossOrigin(origins = {"http://localhost:5173/", "http://localhost:8002"}, allowCredentials = "true")  // 允許另一個host 為 8002 的專案有權限使用
 public class RoomRestController {
 	
 	
@@ -54,7 +54,7 @@ public class RoomRestController {
 	
 	// 新增房間
 	@PostMapping
-	public ResponseEntity<ApiResponse<RoomDto>> addRoom(@Valid @RequestBody RoomDto roomDto, BindingResult bindingResult) {
+	public ResponseEntity<ApiResponse<RoomDto>> addRoom(@Valid @RequestBody RoomDto roomDto, BindingResult bindingResult) { System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 		if(bindingResult.hasErrors()) {
 			//return ResponseEntity.badRequest().body(ApiResponse.error(500, "新增失敗"));
 			//return ResponseEntity.ok(ApiResponse.error(500, "新增失敗:" + bindingResult.getAllErrors().get(0).getDefaultMessage()));
