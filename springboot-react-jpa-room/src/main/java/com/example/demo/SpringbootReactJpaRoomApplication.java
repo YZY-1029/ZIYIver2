@@ -9,5 +9,5 @@ public class SpringbootReactJpaRoomApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootReactJpaRoomApplication.class, args);
 	}
-//
+
 }
