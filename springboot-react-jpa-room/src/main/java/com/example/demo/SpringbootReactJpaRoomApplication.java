@@ -10,4 +10,4 @@ public class SpringbootReactJpaRoomApplication {
 		SpringApplication.run(SpringbootReactJpaRoomApplication.class, args);
 	}
 
-}//
+}
