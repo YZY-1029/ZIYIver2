@@ -3,7 +3,7 @@ package com.example.demo.config;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-//123
+//12
 @Configuration // Springboot 啟動完成前會先執行此配置
 public class ModelMapperConfig {
 	// Springboot 會自動建立此物件並管理
