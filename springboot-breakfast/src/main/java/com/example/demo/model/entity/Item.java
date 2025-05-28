@@ -17,7 +17,6 @@ import lombok.NoArgsConstructor;
 public class Item {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer itemId; // 要自動增加
 	private String itemName;
 	private Integer itemPrice;

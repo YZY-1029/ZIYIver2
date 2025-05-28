@@ -17,15 +17,16 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Order {
+public class OrderTable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer orderId; // 要自動增加
+	
 	private Integer userId; // 動應使用者
 	
-	@OneToMany
-	@JoinColumn(name = "order_id")
+	@OneToMany(mappedBy = "itemName")
 	private List<Item> orderItems;
+	
 	private Integer totalPrice;
 }

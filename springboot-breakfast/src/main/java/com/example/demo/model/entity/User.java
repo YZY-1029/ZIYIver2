@@ -19,12 +19,16 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer Integer; // 自動增加 
+	private Integer userId; // 自動增加 
 	
+	
+	@Column(length = 50, nullable = false)
 	private String userName;
 	
+	@Column(length = 50, nullable = false)
 	private String userEmail; // 確認是否註冊過
 	
+	@Column(length = 50, nullable = false)
 	private String userPassword; // 雜湊 加鹽 可重複
 	
 }
