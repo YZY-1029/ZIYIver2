@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.example.demo.model.entity.User;
 import com.example.demo.repository.UserRepository;
+import com.example.demo.util.Hash;
 
 @SpringBootTest
 public class Test_addUser {
@@ -15,10 +16,17 @@ public class Test_addUser {
 	
 	@Test
 	public void addUser() {
+		
+		String password = "aaaa5614";
+		
+		String salt = Hash.getSalt();
+		String hashedPassword = Hash.getHash(password, salt);
+		
 		User user = new User();
-		user.setUserName("大熊");
-		user.setUserEmail("666666@gmai.com");
-		user.setUserPassword("abcd1234");
+		user.setUserName("胖虎");
+		user.setUserEmail("aaaaaaaa@gmail.com");
+		user.setSalt(salt);
+		user.setUserPassword(hashedPassword);
 		
 		userRepository.save(user);
 		

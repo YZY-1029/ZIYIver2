@@ -25,10 +25,15 @@ public class User {
 	@Column(length = 50, nullable = false)
 	private String userName;
 	
-	@Column(length = 50, nullable = false)
+	@Column(length = 50, nullable = false, unique = true)
 	private String userEmail; // 確認是否註冊過
 	
-	@Column(length = 50, nullable = false)
+	@Column(length = 100, nullable = false)
+	private String salt;
+	
+	@Column(length = 100, nullable = false)
 	private String userPassword; // 雜湊 加鹽 可重複
+	
+	
 	
 }

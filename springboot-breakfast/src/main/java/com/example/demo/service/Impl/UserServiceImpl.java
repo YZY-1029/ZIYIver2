@@ -15,39 +15,25 @@ public class UserServiceImpl implements UserService {
 	
 	
 	@Override
-	public String getUserEmail(String userName) {
-		return userRepository.getUserEmail(userName);
+	public String getUserEmail(Integer userId) {
+		return userRepository.getUserEmail(userId);
 	}
 
 	@Override
-	public void addUser(String userEmail, String userName, String userPassword) {
+	public void addUser(String userName, String userEmail, String userPassword) {
+		// 產生鹽
 		String salt = Hash.getSalt();
-		String passwordHash = Hash.getHash(userPassword, salt);
-		User user = new User(null, userEmail, userName, userPassword);
+		// 加鹽後用 SHA-256 雜湊
+		String hashedPassword = Hash.getHash(userPassword, salt);
+		// 建立 User
+		User user = new User();
+		user.setUserName(userName);
+		user.setUserEmail(userEmail);
+		user.setSalt(salt);
+		user.setUserPassword(hashedPassword);
+		
 		userRepository.save(user);
 		
 	}
-
-	@Override
-	public void fixUserPassword(String userEmail, String userName, String userPassword) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void findUserPassWord(String userEmail, String userName) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void deleteUser(String userId) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-
-	
-	
 
 }
