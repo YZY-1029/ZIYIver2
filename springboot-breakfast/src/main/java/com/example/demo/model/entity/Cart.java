@@ -1,38 +1,34 @@
 package com.example.demo.model.entity;
 
-import java.util.List;
-
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-// 訂單
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-// OrderTable 是點餐頁面 例如當我在首頁典籍了 奶茶 就會進入到 OrderTable  // 然後在 OrderTable 裡面點加入購物車之後 就會跑到購物車之中
-public class OrderTable {
+public class Cart {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer orderId; // 要自動增加
+	private Integer CartId;
 	
 	@ManyToOne
-	@JoinColumn(name = "user_id")
-	private User user; // 對應使用者
+	@JoinColumn(name = "order_id")
+	private OrderTable orderTable;
 	
-	@OneToMany(mappedBy = "orderTable")
-	private List<Cart> carts;
-
+	@ManyToOne
+	@JoinColumn(name = "item_id")
+	private Item item;
 	
+	
+	private Integer quantity;
 	
 }

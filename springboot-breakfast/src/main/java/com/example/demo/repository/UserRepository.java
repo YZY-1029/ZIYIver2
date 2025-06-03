@@ -11,7 +11,7 @@ import com.example.demo.model.entity.User;
 public interface UserRepository extends JpaRepository<User, Integer> {
 	
 	// 取得使用者所有資訊
-	@Query(value = "select * from user where user_email = :email", nativeQuery = true)
+	@Query(value = "select * from user where user_email = :userEmail", nativeQuery = true)
 	User findByUserEmail(@Param("userEmail") String email);
 	
 	// 取得使用者帳號

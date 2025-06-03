@@ -32,9 +32,10 @@ public class Item {
 	@Column(length = 50, nullable = false)
 	private Integer itemQty;
 	
+	@Column(length = 250, nullable = false)
+	private String breakfastUrl;
 	
+
 	
-	@ManyToOne
-	@JoinColumn(name = "order_id")
-	private OrderTable orderTable;
+
 }
