@@ -35,6 +35,9 @@ public class User {
 	@Column(length = 100, nullable = false)
 	private String userPassword; // 雜湊 加鹽 可重複
 	
+	@Column
+	private Boolean active;
+	
 	
 	
 }

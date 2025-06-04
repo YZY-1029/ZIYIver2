@@ -1,5 +1,7 @@
 package com.example.demo.service.Impl;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +22,14 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public void addUser(String userName, String userEmail, String userPassword) {
+	public boolean addUser(String userName, String userEmail, String userPassword) {
+		
+		Optional<User> checkIfExcisting = userRepository.findEmailByUserEmail(userEmail);
+		if(checkIfExcisting.isPresent()) {
+			return false;
+		}
+		
+		
 		// 產生鹽
 		String salt = Hash.getSalt();
 		// 加鹽後用 SHA-256 雜湊
@@ -33,7 +42,9 @@ public class UserServiceImpl implements UserService {
 		user.setUserPassword(hashedPassword);
 		
 		userRepository.save(user);
-		
+		return true;
 	}
+
+	
 
 }

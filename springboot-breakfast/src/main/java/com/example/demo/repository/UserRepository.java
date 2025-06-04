@@ -1,5 +1,7 @@
 package com.example.demo.repository;
 
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -9,6 +11,8 @@ import com.example.demo.model.entity.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
+	
+	Optional<User> findEmailByUserEmail(String userEmail);
 	
 	// 取得使用者所有資訊
 	@Query(value = "select * from user where user_email = :userEmail", nativeQuery = true)

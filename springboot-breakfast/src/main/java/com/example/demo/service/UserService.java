@@ -2,12 +2,15 @@ package com.example.demo.service;
 
 import org.springframework.stereotype.Service;
 
+import com.example.demo.model.dto.UserDto;
+
 
 public interface UserService {
 	
 	public String getUserEmail(Integer userId);
 
-	public void addUser( String userName, String userEmail, String userPassword);
+	
+	public boolean addUser( String userName, String userEmail, String userPassword);
 	
 	
 }
