@@ -5,11 +5,14 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.demo.model.dto.UserDto;
 import com.example.demo.model.entity.User;
 import com.example.demo.repository.UserRepository;
 import com.example.demo.service.UserService;
 import com.example.demo.util.Hash;
 
+
+// 實作業務邏輯 (邏輯層)
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -44,6 +47,8 @@ public class UserServiceImpl implements UserService {
 		userRepository.save(user);
 		return true;
 	}
+
+	
 
 	
 

@@ -7,6 +7,8 @@ import com.example.demo.model.dto.UserDto;
 
 public interface UserService {
 	
+	
+	
 	public String getUserEmail(Integer userId);
 
 	

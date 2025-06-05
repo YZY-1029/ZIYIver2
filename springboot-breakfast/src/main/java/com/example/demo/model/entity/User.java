@@ -35,8 +35,12 @@ public class User {
 	@Column(length = 100, nullable = false)
 	private String userPassword; // 雜湊 加鹽 可重複
 	
-	@Column
+	@Column(columnDefinition = "TINYINT(1) DEFAULT 0")
 	private Boolean active;
+
+	@Column(name = "role")
+	private String role;
+	
 	
 	
 	
