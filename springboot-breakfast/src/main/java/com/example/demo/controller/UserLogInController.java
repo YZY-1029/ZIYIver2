@@ -38,6 +38,11 @@ public class UserLogInController {
 	@Autowired
 	private CertService certService;
 	
+//	// 圖靈認證
+//	boolean captchaValid = recaptchaService.verify(loginDto.getRecaptchaToken());
+//	if(!captchaValid) {
+//		return ResponseEntity.badRequest().body(Map.of("message", "reCAPTCHA 驗證失敗"));
+//	}
 	
 	@PostMapping("/in")
 	public ResponseEntity<ApiResponse<Void>> login(@RequestBody UserLoginDto userEmail, HttpSession session){

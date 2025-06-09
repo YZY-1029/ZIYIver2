@@ -36,10 +36,10 @@ public class User {
 	private String userPassword; // 雜湊 加鹽 可重複
 	
 	@Column(columnDefinition = "TINYINT(1) DEFAULT 0")
-	private Boolean active;
+	private Boolean active = false;    // 一開始為 false 未驗證    // 要去email進行驗證
 
 	@Column(name = "role")
-	private String role;
+	private String role = "user";
 	
 	
 	

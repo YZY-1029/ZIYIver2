@@ -26,6 +26,8 @@ public class Test_addUser {
 	    user1.setUserEmail("fat_tiger@gmail.com");
 	    user1.setSalt(salt1);
 	    user1.setUserPassword(hashedPassword1);
+	    user1.setActive(true);
+	    user1.setRole("user");
 
 	    // 使用者2
 	    String password2 = "bbbb1234";
@@ -37,9 +39,26 @@ public class Test_addUser {
 	    user2.setUserEmail("rich_kid@gmail.com");
 	    user2.setSalt(salt2);
 	    user2.setUserPassword(hashedPassword2);
+	    user2.setActive(true);
+	    user2.setRole("user");
+	    
+	    
+	    // 使用者3
+	    String password3 = "dddd";
+	    String salt3 = Hash.getSalt();
+	    String hashedPassword3 = Hash.getHash(password3, salt3);
+
+	    User user3 = new User();
+	    user3.setUserName("小叮叮");
+	    user3.setUserEmail("dd@gmail.com");
+	    user3.setSalt(salt3);
+	    user3.setUserPassword(hashedPassword3);
+	    user3.setActive(true);
+	    user3.setRole("user");
 
 	    // 一起儲存
 	    userRepository.save(user1);
 	    userRepository.save(user2);
+	    userRepository.save(user3);
 	}
 }

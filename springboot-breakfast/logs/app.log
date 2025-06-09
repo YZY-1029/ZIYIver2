@@ -1,27 +1,27 @@
-2025-06-06T12:21:27.186+08:00  INFO 17052 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Starting SpringbootBreakfastApplication using Java 21.0.6 with PID 17052 (E:\ecl\eclwork\springboot-breakfast\target\classes started by NTPU in E:\ecl\eclwork\springboot-breakfast)
-2025-06-06T12:21:27.188+08:00  INFO 17052 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : No active profile set, falling back to 1 default profile: "default"
-2025-06-06T12:21:27.597+08:00  INFO 17052 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-06-06T12:21:27.598+08:00  INFO 17052 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-06-06T12:21:27.619+08:00  INFO 17052 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-06T12:21:27.620+08:00  INFO 17052 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-06T12:21:27.621+08:00  INFO 17052 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-06T12:21:27.621+08:00  INFO 17052 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
-2025-06-06T12:21:27.628+08:00  INFO 17052 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-06-06T12:21:27.629+08:00  INFO 17052 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-06T12:21:27.647+08:00  INFO 17052 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
-2025-06-06T12:21:27.929+08:00  INFO 17052 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7899 (http)
-2025-06-06T12:21:27.939+08:00  INFO 17052 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-06T12:21:27.939+08:00  INFO 17052 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-06T12:21:27.970+08:00  INFO 17052 --- [springboot-breakfast] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-06T12:21:27.970+08:00  INFO 17052 --- [springboot-breakfast] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 762 ms
-2025-06-06T12:21:28.067+08:00  INFO 17052 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-06T12:21:28.108+08:00  INFO 17052 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
-2025-06-06T12:21:28.131+08:00  INFO 17052 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-06T12:21:28.314+08:00  INFO 17052 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-06T12:21:28.334+08:00  INFO 17052 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-06T12:21:28.435+08:00  INFO 17052 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fb48970
-2025-06-06T12:21:28.436+08:00  INFO 17052 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-06T12:21:28.490+08:00  INFO 17052 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-09T09:36:41.127+08:00  INFO 5064 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Starting SpringbootBreakfastApplication using Java 21.0.6 with PID 5064 (E:\ecl\eclwork\springboot-breakfast\target\classes started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T09:36:41.129+08:00  INFO 5064 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T09:36:41.587+08:00  INFO 5064 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T09:36:41.588+08:00  INFO 5064 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T09:36:41.611+08:00  INFO 5064 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T09:36:41.612+08:00  INFO 5064 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T09:36:41.613+08:00  INFO 5064 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T09:36:41.613+08:00  INFO 5064 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2025-06-09T09:36:41.620+08:00  INFO 5064 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T09:36:41.620+08:00  INFO 5064 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T09:36:41.639+08:00  INFO 5064 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2025-06-09T09:36:41.918+08:00  INFO 5064 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7899 (http)
+2025-06-09T09:36:41.929+08:00  INFO 5064 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T09:36:41.929+08:00  INFO 5064 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-09T09:36:41.958+08:00  INFO 5064 --- [springboot-breakfast] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T09:36:41.959+08:00  INFO 5064 --- [springboot-breakfast] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 806 ms
+2025-06-09T09:36:42.056+08:00  INFO 5064 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T09:36:42.098+08:00  INFO 5064 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T09:36:42.122+08:00  INFO 5064 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T09:36:42.305+08:00  INFO 5064 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T09:36:42.325+08:00  INFO 5064 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T09:36:42.427+08:00  INFO 5064 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de56885
+2025-06-09T09:36:42.428+08:00  INFO 5064 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T09:36:42.481+08:00  INFO 5064 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.34
@@ -29,12 +29,684 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-06-06T12:21:29.055+08:00  INFO 17052 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-06T12:21:29.104+08:00  INFO 17052 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-06T12:21:29.288+08:00  INFO 17052 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-06-06T12:21:29.563+08:00  INFO 17052 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7899 (http) with context path '/'
-2025-06-06T12:21:29.567+08:00  INFO 17052 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Started SpringbootBreakfastApplication in 2.616 seconds (process running for 2.937)
-2025-06-06T12:21:33.215+08:00  INFO 17052 --- [springboot-breakfast] [http-nio-7899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-06T12:21:33.215+08:00  INFO 17052 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-06T12:21:33.215+08:00  INFO 17052 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-06-06T12:34:26.681+08:00  WARN 17052 --- [springboot-breakfast] [http-nio-7899-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
+2025-06-09T09:36:43.035+08:00  INFO 5064 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T09:36:43.081+08:00  INFO 5064 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T09:36:43.243+08:00  INFO 5064 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T09:36:43.577+08:00  INFO 5064 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7899 (http) with context path '/'
+2025-06-09T09:36:43.581+08:00  INFO 5064 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Started SpringbootBreakfastApplication in 2.734 seconds (process running for 3.128)
+2025-06-09T10:17:16.732+08:00  INFO 5064 --- [springboot-breakfast] [RMI TCP Connection(50)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-09T10:17:16.734+08:00  INFO 5064 --- [springboot-breakfast] [RMI TCP Connection(50)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T10:17:16.736+08:00  INFO 5064 --- [springboot-breakfast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T10:17:16.738+08:00  INFO 5064 --- [springboot-breakfast] [RMI TCP Connection(50)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T10:17:16.739+08:00  INFO 5064 --- [springboot-breakfast] [RMI TCP Connection(50)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T10:17:16.740+08:00  INFO 5064 --- [springboot-breakfast] [RMI TCP Connection(50)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T10:42:25.354+08:00  INFO 9704 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Starting SpringbootBreakfastApplication using Java 21.0.6 with PID 9704 (E:\ecl\eclwork\springboot-breakfast\target\classes started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T10:42:25.356+08:00  INFO 9704 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T10:42:25.702+08:00  INFO 9704 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T10:42:25.703+08:00  INFO 9704 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T10:42:25.721+08:00  INFO 9704 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T10:42:25.722+08:00  INFO 9704 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T10:42:25.723+08:00  INFO 9704 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T10:42:25.723+08:00  INFO 9704 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JDBC repository interfaces.
+2025-06-09T10:42:25.729+08:00  INFO 9704 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T10:42:25.730+08:00  INFO 9704 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T10:42:25.746+08:00  INFO 9704 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-06-09T10:42:25.994+08:00  INFO 9704 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7899 (http)
+2025-06-09T10:42:26.002+08:00  INFO 9704 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T10:42:26.003+08:00  INFO 9704 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-09T10:42:26.028+08:00  INFO 9704 --- [springboot-breakfast] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T10:42:26.028+08:00  INFO 9704 --- [springboot-breakfast] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 651 ms
+2025-06-09T10:42:26.110+08:00  INFO 9704 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T10:42:26.135+08:00  INFO 9704 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T10:42:26.152+08:00  INFO 9704 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T10:42:26.290+08:00  INFO 9704 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T10:42:26.306+08:00  INFO 9704 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T10:42:26.393+08:00  INFO 9704 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6851b296
+2025-06-09T10:42:26.395+08:00  INFO 9704 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T10:42:26.438+08:00  INFO 9704 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T10:42:26.929+08:00  INFO 9704 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T10:42:26.974+08:00  INFO 9704 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T10:42:27.144+08:00  INFO 9704 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T10:42:27.411+08:00  INFO 9704 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7899 (http) with context path '/'
+2025-06-09T10:42:27.416+08:00  INFO 9704 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Started SpringbootBreakfastApplication in 2.28 seconds (process running for 2.583)
+2025-06-09T10:42:31.566+08:00  INFO 9704 --- [springboot-breakfast] [http-nio-7899-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T10:42:31.567+08:00  INFO 9704 --- [springboot-breakfast] [http-nio-7899-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T10:42:31.567+08:00  INFO 9704 --- [springboot-breakfast] [http-nio-7899-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-09T12:11:39.220+08:00  INFO 9704 --- [springboot-breakfast] [RMI TCP Connection(98)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-09T12:11:39.221+08:00  INFO 9704 --- [springboot-breakfast] [RMI TCP Connection(98)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T12:11:39.224+08:00  INFO 9704 --- [springboot-breakfast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T12:11:39.225+08:00  INFO 9704 --- [springboot-breakfast] [RMI TCP Connection(98)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T12:11:39.227+08:00  INFO 9704 --- [springboot-breakfast] [RMI TCP Connection(98)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T12:11:39.228+08:00  INFO 9704 --- [springboot-breakfast] [RMI TCP Connection(98)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T12:19:37.318+08:00  INFO 5104 --- [springboot-breakfast] [main] com.example.demo.Test_addUser            : Starting Test_addUser using Java 21.0.6 with PID 5104 (started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T12:19:37.319+08:00  INFO 5104 --- [springboot-breakfast] [main] com.example.demo.Test_addUser            : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T12:19:37.697+08:00  INFO 5104 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T12:19:37.698+08:00  INFO 5104 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T12:19:37.719+08:00  INFO 5104 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T12:19:37.720+08:00  INFO 5104 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T12:19:37.721+08:00  INFO 5104 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T12:19:37.721+08:00  INFO 5104 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2025-06-09T12:19:37.729+08:00  INFO 5104 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T12:19:37.729+08:00  INFO 5104 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T12:19:37.751+08:00  INFO 5104 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-06-09T12:19:38.010+08:00  INFO 5104 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T12:19:38.043+08:00  INFO 5104 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T12:19:38.065+08:00  INFO 5104 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T12:19:38.251+08:00  INFO 5104 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T12:19:38.270+08:00  INFO 5104 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T12:19:38.370+08:00  INFO 5104 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34beadce
+2025-06-09T12:19:38.371+08:00  INFO 5104 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T12:19:38.415+08:00  INFO 5104 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T12:19:38.920+08:00  INFO 5104 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T12:19:38.961+08:00  INFO 5104 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T12:19:39.156+08:00  INFO 5104 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T12:19:39.530+08:00  INFO 5104 --- [springboot-breakfast] [main] com.example.demo.Test_addUser            : Started Test_addUser in 2.414 seconds (process running for 3.007)
+2025-06-09T12:19:40.068+08:00  WARN 5104 --- [springboot-breakfast] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2025-06-09T12:19:40.068+08:00 ERROR 5104 --- [springboot-breakfast] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'fat_tiger@gmail.com' for key 'user.UKj09k2v8lxofv2vecxu2hde9so'
+2025-06-09T12:19:40.088+08:00  INFO 5104 --- [springboot-breakfast] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T12:19:40.089+08:00  INFO 5104 --- [springboot-breakfast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T12:19:40.093+08:00  INFO 5104 --- [springboot-breakfast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T12:23:12.228+08:00  INFO 12540 --- [springboot-breakfast] [main] com.example.demo.Test_addUser            : Starting Test_addUser using Java 21.0.6 with PID 12540 (started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T12:23:12.228+08:00  INFO 12540 --- [springboot-breakfast] [main] com.example.demo.Test_addUser            : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T12:23:12.602+08:00  INFO 12540 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T12:23:12.603+08:00  INFO 12540 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T12:23:12.623+08:00  INFO 12540 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T12:23:12.624+08:00  INFO 12540 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T12:23:12.625+08:00  INFO 12540 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T12:23:12.626+08:00  INFO 12540 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2025-06-09T12:23:12.633+08:00  INFO 12540 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T12:23:12.633+08:00  INFO 12540 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T12:23:12.656+08:00  INFO 12540 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-06-09T12:23:12.923+08:00  INFO 12540 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T12:23:12.956+08:00  INFO 12540 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T12:23:12.977+08:00  INFO 12540 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T12:23:13.160+08:00  INFO 12540 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T12:23:13.180+08:00  INFO 12540 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T12:23:13.287+08:00  INFO 12540 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34beadce
+2025-06-09T12:23:13.288+08:00  INFO 12540 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T12:23:13.332+08:00  INFO 12540 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T12:23:13.833+08:00  INFO 12540 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T12:23:13.873+08:00  INFO 12540 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T12:23:14.029+08:00  INFO 12540 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T12:23:14.445+08:00  INFO 12540 --- [springboot-breakfast] [main] com.example.demo.Test_addUser            : Started Test_addUser in 2.41 seconds (process running for 2.932)
+2025-06-09T12:23:14.723+08:00  INFO 12540 --- [springboot-breakfast] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T12:23:14.724+08:00  INFO 12540 --- [springboot-breakfast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T12:23:14.728+08:00  INFO 12540 --- [springboot-breakfast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T12:25:19.991+08:00  INFO 14320 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Starting SpringbootBreakfastApplication using Java 21.0.6 with PID 14320 (E:\ecl\eclwork\springboot-breakfast\target\classes started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T12:25:19.992+08:00  INFO 14320 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T12:25:20.319+08:00  INFO 14320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T12:25:20.320+08:00  INFO 14320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T12:25:20.338+08:00  INFO 14320 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T12:25:20.339+08:00  INFO 14320 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T12:25:20.339+08:00  INFO 14320 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T12:25:20.340+08:00  INFO 14320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2025-06-09T12:25:20.345+08:00  INFO 14320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T12:25:20.346+08:00  INFO 14320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T12:25:20.363+08:00  INFO 14320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-06-09T12:25:20.599+08:00  INFO 14320 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7899 (http)
+2025-06-09T12:25:20.608+08:00  INFO 14320 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T12:25:20.608+08:00  INFO 14320 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-09T12:25:20.634+08:00  INFO 14320 --- [springboot-breakfast] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T12:25:20.635+08:00  INFO 14320 --- [springboot-breakfast] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 622 ms
+2025-06-09T12:25:20.714+08:00  INFO 14320 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T12:25:20.739+08:00  INFO 14320 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T12:25:20.757+08:00  INFO 14320 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T12:25:20.900+08:00  INFO 14320 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T12:25:20.916+08:00  INFO 14320 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T12:25:21.002+08:00  INFO 14320 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f7a20da
+2025-06-09T12:25:21.003+08:00  INFO 14320 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T12:25:21.044+08:00  INFO 14320 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T12:25:21.534+08:00  INFO 14320 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T12:25:21.573+08:00  INFO 14320 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T12:25:21.747+08:00  INFO 14320 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T12:25:22.000+08:00  INFO 14320 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7899 (http) with context path '/'
+2025-06-09T12:25:22.004+08:00  INFO 14320 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Started SpringbootBreakfastApplication in 2.226 seconds (process running for 2.516)
+2025-06-09T12:25:25.627+08:00  INFO 14320 --- [springboot-breakfast] [http-nio-7899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T12:25:25.627+08:00  INFO 14320 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T12:25:25.628+08:00  INFO 14320 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-09T15:16:40.962+08:00  INFO 14320 --- [springboot-breakfast] [RMI TCP Connection(181)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-09T15:16:40.964+08:00  INFO 14320 --- [springboot-breakfast] [RMI TCP Connection(181)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T15:16:40.966+08:00  INFO 14320 --- [springboot-breakfast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T15:16:40.969+08:00  INFO 14320 --- [springboot-breakfast] [RMI TCP Connection(181)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:16:40.970+08:00  INFO 14320 --- [springboot-breakfast] [RMI TCP Connection(181)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T15:16:40.971+08:00  INFO 14320 --- [springboot-breakfast] [RMI TCP Connection(181)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T15:16:42.374+08:00  INFO 1524 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Starting SpringbootBreakfastApplication using Java 21.0.6 with PID 1524 (E:\ecl\eclwork\springboot-breakfast\target\classes started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T15:16:42.375+08:00  INFO 1524 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:16:42.879+08:00  INFO 1524 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T15:16:42.880+08:00  INFO 1524 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T15:16:42.909+08:00  INFO 1524 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T15:16:42.910+08:00  INFO 1524 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T15:16:42.911+08:00  INFO 1524 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T15:16:42.912+08:00  INFO 1524 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 0 JDBC repository interfaces.
+2025-06-09T15:16:42.920+08:00  INFO 1524 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T15:16:42.920+08:00  INFO 1524 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:16:42.941+08:00  INFO 1524 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2025-06-09T15:16:43.266+08:00  INFO 1524 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7899 (http)
+2025-06-09T15:16:43.275+08:00  INFO 1524 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:16:43.275+08:00  INFO 1524 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-09T15:16:43.307+08:00  INFO 1524 --- [springboot-breakfast] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:16:43.308+08:00  INFO 1524 --- [springboot-breakfast] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 904 ms
+2025-06-09T15:16:43.403+08:00  INFO 1524 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:16:43.447+08:00  INFO 1524 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T15:16:43.471+08:00  INFO 1524 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:16:43.684+08:00  INFO 1524 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:16:43.704+08:00  INFO 1524 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T15:16:43.804+08:00  INFO 1524 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77ba583
+2025-06-09T15:16:43.805+08:00  INFO 1524 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T15:16:43.859+08:00  INFO 1524 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:16:44.434+08:00  INFO 1524 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:16:44.477+08:00  INFO 1524 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:16:44.611+08:00  INFO 1524 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T15:16:44.908+08:00  INFO 1524 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7899 (http) with context path '/'
+2025-06-09T15:16:44.912+08:00  INFO 1524 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Started SpringbootBreakfastApplication in 2.806 seconds (process running for 3.182)
+2025-06-09T15:21:22.627+08:00  INFO 1524 --- [springboot-breakfast] [http-nio-7899-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T15:21:22.627+08:00  INFO 1524 --- [springboot-breakfast] [http-nio-7899-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T15:21:22.628+08:00  INFO 1524 --- [springboot-breakfast] [http-nio-7899-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-09T15:49:56.807+08:00  INFO 1524 --- [springboot-breakfast] [RMI TCP Connection(41)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-09T15:49:56.808+08:00  INFO 1524 --- [springboot-breakfast] [RMI TCP Connection(41)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T15:49:56.811+08:00  INFO 1524 --- [springboot-breakfast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T15:49:56.812+08:00  INFO 1524 --- [springboot-breakfast] [RMI TCP Connection(41)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:49:56.813+08:00  INFO 1524 --- [springboot-breakfast] [RMI TCP Connection(41)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T15:49:56.814+08:00  INFO 1524 --- [springboot-breakfast] [RMI TCP Connection(41)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T15:49:58.072+08:00  INFO 17404 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Starting SpringbootBreakfastApplication using Java 21.0.6 with PID 17404 (E:\ecl\eclwork\springboot-breakfast\target\classes started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T15:49:58.073+08:00  INFO 17404 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:49:58.384+08:00  INFO 17404 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T15:49:58.385+08:00  INFO 17404 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T15:49:58.403+08:00  INFO 17404 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T15:49:58.404+08:00  INFO 17404 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T15:49:58.405+08:00  INFO 17404 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T15:49:58.405+08:00  INFO 17404 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2025-06-09T15:49:58.411+08:00  INFO 17404 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T15:49:58.411+08:00  INFO 17404 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:49:58.428+08:00  INFO 17404 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-06-09T15:49:58.666+08:00  INFO 17404 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7899 (http)
+2025-06-09T15:49:58.674+08:00  INFO 17404 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:49:58.674+08:00  INFO 17404 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-09T15:49:58.700+08:00  INFO 17404 --- [springboot-breakfast] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:49:58.700+08:00  INFO 17404 --- [springboot-breakfast] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 608 ms
+2025-06-09T15:49:58.781+08:00  INFO 17404 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:49:58.805+08:00  INFO 17404 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T15:49:58.822+08:00  INFO 17404 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:49:58.962+08:00  INFO 17404 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:49:58.977+08:00  INFO 17404 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T15:49:59.062+08:00  INFO 17404 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194224ca
+2025-06-09T15:49:59.064+08:00  INFO 17404 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T15:49:59.106+08:00  INFO 17404 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:49:59.574+08:00  INFO 17404 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:49:59.612+08:00  INFO 17404 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:49:59.775+08:00  INFO 17404 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T15:50:00.026+08:00  INFO 17404 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7899 (http) with context path '/'
+2025-06-09T15:50:00.030+08:00  INFO 17404 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Started SpringbootBreakfastApplication in 2.169 seconds (process running for 2.469)
+2025-06-09T15:50:03.653+08:00  INFO 17404 --- [springboot-breakfast] [http-nio-7899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T15:50:03.653+08:00  INFO 17404 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T15:50:03.654+08:00  INFO 17404 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-09T15:51:45.285+08:00  INFO 17404 --- [springboot-breakfast] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-09T15:51:45.286+08:00  INFO 17404 --- [springboot-breakfast] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T15:51:45.288+08:00  INFO 17404 --- [springboot-breakfast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T15:51:45.290+08:00  INFO 17404 --- [springboot-breakfast] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:51:45.291+08:00  INFO 17404 --- [springboot-breakfast] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T15:51:45.294+08:00  INFO 17404 --- [springboot-breakfast] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T15:51:46.652+08:00  INFO 16096 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Starting SpringbootBreakfastApplication using Java 21.0.6 with PID 16096 (E:\ecl\eclwork\springboot-breakfast\target\classes started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T15:51:46.653+08:00  INFO 16096 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:51:47.019+08:00  INFO 16096 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T15:51:47.020+08:00  INFO 16096 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T15:51:47.043+08:00  INFO 16096 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T15:51:47.045+08:00  INFO 16096 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T15:51:47.046+08:00  INFO 16096 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T15:51:47.046+08:00  INFO 16096 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2025-06-09T15:51:47.053+08:00  INFO 16096 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T15:51:47.054+08:00  INFO 16096 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:51:47.075+08:00  INFO 16096 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2025-06-09T15:51:47.385+08:00  INFO 16096 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7899 (http)
+2025-06-09T15:51:47.394+08:00  INFO 16096 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:51:47.394+08:00  INFO 16096 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-09T15:51:47.420+08:00  INFO 16096 --- [springboot-breakfast] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:51:47.421+08:00  INFO 16096 --- [springboot-breakfast] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 743 ms
+2025-06-09T15:51:47.500+08:00  INFO 16096 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:51:47.528+08:00  INFO 16096 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T15:51:47.545+08:00  INFO 16096 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:51:47.689+08:00  INFO 16096 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:51:47.705+08:00  INFO 16096 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T15:51:47.792+08:00  INFO 16096 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194224ca
+2025-06-09T15:51:47.793+08:00  INFO 16096 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T15:51:47.836+08:00  INFO 16096 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:51:48.316+08:00  INFO 16096 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:51:48.352+08:00  INFO 16096 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:51:48.514+08:00  INFO 16096 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T15:51:48.771+08:00  INFO 16096 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7899 (http) with context path '/'
+2025-06-09T15:51:48.776+08:00  INFO 16096 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Started SpringbootBreakfastApplication in 2.382 seconds (process running for 2.728)
+2025-06-09T15:51:53.573+08:00  INFO 16096 --- [springboot-breakfast] [http-nio-7899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T15:51:53.573+08:00  INFO 16096 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T15:51:53.574+08:00  INFO 16096 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-09T16:03:21.545+08:00  INFO 16096 --- [springboot-breakfast] [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-09T16:03:21.547+08:00  INFO 16096 --- [springboot-breakfast] [RMI TCP Connection(21)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T16:03:21.549+08:00  INFO 16096 --- [springboot-breakfast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T16:03:21.550+08:00  INFO 16096 --- [springboot-breakfast] [RMI TCP Connection(21)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T16:03:21.551+08:00  INFO 16096 --- [springboot-breakfast] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T16:03:21.554+08:00  INFO 16096 --- [springboot-breakfast] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T16:03:22.915+08:00  INFO 5840 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Starting SpringbootBreakfastApplication using Java 21.0.6 with PID 5840 (E:\ecl\eclwork\springboot-breakfast\target\classes started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T16:03:22.916+08:00  INFO 5840 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T16:03:23.299+08:00  INFO 5840 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T16:03:23.300+08:00  INFO 5840 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T16:03:23.324+08:00  INFO 5840 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T16:03:23.325+08:00  INFO 5840 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T16:03:23.327+08:00  INFO 5840 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T16:03:23.327+08:00  INFO 5840 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2025-06-09T16:03:23.337+08:00  INFO 5840 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T16:03:23.338+08:00  INFO 5840 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T16:03:23.364+08:00  INFO 5840 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2025-06-09T16:03:23.669+08:00  INFO 5840 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7899 (http)
+2025-06-09T16:03:23.678+08:00  INFO 5840 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T16:03:23.678+08:00  INFO 5840 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-09T16:03:23.705+08:00  INFO 5840 --- [springboot-breakfast] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T16:03:23.705+08:00  INFO 5840 --- [springboot-breakfast] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 765 ms
+2025-06-09T16:03:23.784+08:00  INFO 5840 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T16:03:23.809+08:00  INFO 5840 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T16:03:23.826+08:00  INFO 5840 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T16:03:23.976+08:00  INFO 5840 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T16:03:23.993+08:00  INFO 5840 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T16:03:24.080+08:00  INFO 5840 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@685e6a68
+2025-06-09T16:03:24.081+08:00  INFO 5840 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T16:03:24.122+08:00  INFO 5840 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T16:03:24.603+08:00  INFO 5840 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T16:03:24.639+08:00  INFO 5840 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T16:03:24.798+08:00  INFO 5840 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T16:03:25.055+08:00  INFO 5840 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7899 (http) with context path '/'
+2025-06-09T16:03:25.059+08:00  INFO 5840 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Started SpringbootBreakfastApplication in 2.391 seconds (process running for 2.758)
+2025-06-09T16:03:29.873+08:00  INFO 5840 --- [springboot-breakfast] [http-nio-7899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T16:03:29.873+08:00  INFO 5840 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T16:03:29.874+08:00  INFO 5840 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-09T16:03:43.152+08:00  WARN 5840 --- [springboot-breakfast] [http-nio-7899-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2025-06-09T16:03:43.152+08:00 ERROR 5840 --- [springboot-breakfast] [http-nio-7899-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'user_password' cannot be null
+2025-06-09T16:03:43.159+08:00 ERROR 5840 --- [springboot-breakfast] [http-nio-7899-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Column 'user_password' cannot be null] [insert into user (active,role,salt,user_email,user_name,user_password) values (?,?,?,?,?,?)]; SQL [insert into user (active,role,salt,user_email,user_name,user_password) values (?,?,?,?,?,?)]; constraint [null]] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Column 'user_password' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-6.3.0.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:394) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:308) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320) ~[spring-orm-6.2.7.jar:6.2.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy120.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:651) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:734) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.7.jar:6.2.7]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.7.jar:6.2.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.7.jar:6.2.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.7.jar:6.2.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy128.save(Unknown Source) ~[na:na]
+	at com.example.demo.service.Impl.UserServiceImpl.addUser(UserServiceImpl.java:47) ~[classes/:na]
+	at com.example.demo.controller.RegisterController.register(RegisterController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-09T16:03:50.923+08:00  WARN 5840 --- [springboot-breakfast] [http-nio-7899-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2025-06-09T16:03:50.924+08:00 ERROR 5840 --- [springboot-breakfast] [http-nio-7899-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'user_password' cannot be null
+2025-06-09T16:03:50.924+08:00 ERROR 5840 --- [springboot-breakfast] [http-nio-7899-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Column 'user_password' cannot be null] [insert into user (active,role,salt,user_email,user_name,user_password) values (?,?,?,?,?,?)]; SQL [insert into user (active,role,salt,user_email,user_name,user_password) values (?,?,?,?,?,?)]; constraint [null]] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Column 'user_password' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-6.3.0.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:394) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:308) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320) ~[spring-orm-6.2.7.jar:6.2.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy120.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:651) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:734) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-3.5.0.jar:3.5.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.7.jar:6.2.7]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.7.jar:6.2.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.7.jar:6.2.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.7.jar:6.2.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy128.save(Unknown Source) ~[na:na]
+	at com.example.demo.service.Impl.UserServiceImpl.addUser(UserServiceImpl.java:47) ~[classes/:na]
+	at com.example.demo.controller.RegisterController.register(RegisterController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-09T16:36:27.030+08:00  INFO 5840 --- [springboot-breakfast] [RMI TCP Connection(41)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-09T16:36:27.031+08:00  INFO 5840 --- [springboot-breakfast] [RMI TCP Connection(41)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T16:36:27.034+08:00  INFO 5840 --- [springboot-breakfast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T16:36:27.035+08:00  INFO 5840 --- [springboot-breakfast] [RMI TCP Connection(41)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T16:36:27.036+08:00  INFO 5840 --- [springboot-breakfast] [RMI TCP Connection(41)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T16:36:27.037+08:00  INFO 5840 --- [springboot-breakfast] [RMI TCP Connection(41)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T16:46:09.023+08:00  INFO 5320 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Starting SpringbootBreakfastApplication using Java 21.0.6 with PID 5320 (E:\ecl\eclwork\springboot-breakfast\target\classes started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T16:46:09.025+08:00  INFO 5320 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T16:46:09.343+08:00  INFO 5320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T16:46:09.343+08:00  INFO 5320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T16:46:09.362+08:00  INFO 5320 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T16:46:09.363+08:00  INFO 5320 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T16:46:09.364+08:00  INFO 5320 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T16:46:09.364+08:00  INFO 5320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2025-06-09T16:46:09.370+08:00  INFO 5320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T16:46:09.371+08:00  INFO 5320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T16:46:09.397+08:00  INFO 5320 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2025-06-09T16:46:09.649+08:00  INFO 5320 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7899 (http)
+2025-06-09T16:46:09.658+08:00  INFO 5320 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T16:46:09.658+08:00  INFO 5320 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-09T16:46:09.685+08:00  INFO 5320 --- [springboot-breakfast] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T16:46:09.685+08:00  INFO 5320 --- [springboot-breakfast] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 639 ms
+2025-06-09T16:46:09.767+08:00  INFO 5320 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T16:46:09.792+08:00  INFO 5320 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T16:46:09.810+08:00  INFO 5320 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T16:46:09.954+08:00  INFO 5320 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T16:46:09.970+08:00  INFO 5320 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T16:46:10.061+08:00  INFO 5320 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68a5aadd
+2025-06-09T16:46:10.062+08:00  INFO 5320 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T16:46:10.106+08:00  INFO 5320 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T16:46:10.601+08:00  INFO 5320 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T16:46:10.641+08:00  INFO 5320 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T16:46:10.808+08:00  INFO 5320 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T16:46:11.068+08:00  INFO 5320 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7899 (http) with context path '/'
+2025-06-09T16:46:11.072+08:00  INFO 5320 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Started SpringbootBreakfastApplication in 2.263 seconds (process running for 2.571)
+2025-06-09T16:46:11.938+08:00  INFO 5320 --- [springboot-breakfast] [http-nio-7899-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T16:46:11.939+08:00  INFO 5320 --- [springboot-breakfast] [http-nio-7899-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T16:46:11.939+08:00  INFO 5320 --- [springboot-breakfast] [http-nio-7899-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-09T17:12:08.371+08:00  INFO 5320 --- [springboot-breakfast] [RMI TCP Connection(35)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-09T17:12:08.373+08:00  INFO 5320 --- [springboot-breakfast] [RMI TCP Connection(35)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T17:12:08.375+08:00  INFO 5320 --- [springboot-breakfast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T17:12:08.377+08:00  INFO 5320 --- [springboot-breakfast] [RMI TCP Connection(35)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T17:12:08.378+08:00  INFO 5320 --- [springboot-breakfast] [RMI TCP Connection(35)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T17:12:08.379+08:00  INFO 5320 --- [springboot-breakfast] [RMI TCP Connection(35)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T17:12:09.443+08:00  INFO 17676 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Starting SpringbootBreakfastApplication using Java 21.0.6 with PID 17676 (E:\ecl\eclwork\springboot-breakfast\target\classes started by NTPU in E:\ecl\eclwork\springboot-breakfast)
+2025-06-09T17:12:09.444+08:00  INFO 17676 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T17:12:09.754+08:00  INFO 17676 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T17:12:09.755+08:00  INFO 17676 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-09T17:12:09.773+08:00  INFO 17676 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T17:12:09.774+08:00  INFO 17676 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrderTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T17:12:09.775+08:00  INFO 17676 --- [springboot-breakfast] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-09T17:12:09.775+08:00  INFO 17676 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JDBC repository interfaces.
+2025-06-09T17:12:09.781+08:00  INFO 17676 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-09T17:12:09.782+08:00  INFO 17676 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T17:12:09.798+08:00  INFO 17676 --- [springboot-breakfast] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-06-09T17:12:10.036+08:00  INFO 17676 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7899 (http)
+2025-06-09T17:12:10.044+08:00  INFO 17676 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T17:12:10.045+08:00  INFO 17676 --- [springboot-breakfast] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-09T17:12:10.071+08:00  INFO 17676 --- [springboot-breakfast] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T17:12:10.071+08:00  INFO 17676 --- [springboot-breakfast] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 608 ms
+2025-06-09T17:12:10.152+08:00  INFO 17676 --- [springboot-breakfast] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T17:12:10.176+08:00  INFO 17676 --- [springboot-breakfast] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-09T17:12:10.194+08:00  INFO 17676 --- [springboot-breakfast] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T17:12:10.334+08:00  INFO 17676 --- [springboot-breakfast] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T17:12:10.350+08:00  INFO 17676 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T17:12:10.436+08:00  INFO 17676 --- [springboot-breakfast] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db728df
+2025-06-09T17:12:10.437+08:00  INFO 17676 --- [springboot-breakfast] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T17:12:10.479+08:00  INFO 17676 --- [springboot-breakfast] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T17:12:10.953+08:00  INFO 17676 --- [springboot-breakfast] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T17:12:10.992+08:00  INFO 17676 --- [springboot-breakfast] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T17:12:11.120+08:00  INFO 17676 --- [springboot-breakfast] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-09T17:12:11.402+08:00  INFO 17676 --- [springboot-breakfast] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7899 (http) with context path '/'
+2025-06-09T17:12:11.406+08:00  INFO 17676 --- [springboot-breakfast] [main] c.e.demo.SpringbootBreakfastApplication  : Started SpringbootBreakfastApplication in 2.175 seconds (process running for 2.468)
+2025-06-09T17:12:26.205+08:00  INFO 17676 --- [springboot-breakfast] [http-nio-7899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T17:12:26.205+08:00  INFO 17676 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T17:12:26.206+08:00  INFO 17676 --- [springboot-breakfast] [http-nio-7899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-09T17:55:37.885+08:00  INFO 17676 --- [springboot-breakfast] [RMI TCP Connection(54)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-09T17:55:37.886+08:00  INFO 17676 --- [springboot-breakfast] [RMI TCP Connection(54)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T17:55:37.889+08:00  INFO 17676 --- [springboot-breakfast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T17:55:37.891+08:00  INFO 17676 --- [springboot-breakfast] [RMI TCP Connection(54)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T17:55:37.892+08:00  INFO 17676 --- [springboot-breakfast] [RMI TCP Connection(54)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T17:55:37.894+08:00  INFO 17676 --- [springboot-breakfast] [RMI TCP Connection(54)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
