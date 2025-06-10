@@ -1,6 +1,8 @@
 package com.example.demo.controller;
 
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -22,6 +24,7 @@ import com.example.demo.model.entity.User;
 import com.example.demo.repository.UserRepository;
 import com.example.demo.response.ApiResponse;
 import com.example.demo.service.CertService;
+import com.example.demo.service.RecaptchaService;
 import com.example.demo.service.UserService;
 
 import jakarta.servlet.http.HttpSession;
@@ -38,18 +41,25 @@ public class UserLogInController {
 	@Autowired
 	private CertService certService;
 	
-//	// 圖靈認證
-//	boolean captchaValid = recaptchaService.verify(loginDto.getRecaptchaToken());
-//	if(!captchaValid) {
-//		return ResponseEntity.badRequest().body(Map.of("message", "reCAPTCHA 驗證失敗"));
-//	}
+//	@Autowired
+//	private RecaptchaService recaptchaService;
+
+	
 	
 	@PostMapping("/in")
-	public ResponseEntity<ApiResponse<Void>> login(@RequestBody UserLoginDto userEmail, HttpSession session){
+	public ResponseEntity<ApiResponse<UserDto>> login(@RequestBody UserLoginDto userEmail, HttpSession session){
+//		// 圖靈認證
+//		boolean captchaValid = recaptchaService.verify(userEmail.getRecaptchaToken());
+//		if(!captchaValid) {
+//			return ResponseEntity.badRequest()
+//								 .body(ApiResponse.error(400, "reCAPTCHA 驗證失敗"));
+//		}
 		try {
 			UserCert cert = certService.getCert(userEmail.getEmail(), userEmail.getPassword());
 			session.setAttribute("userCert", cert);
-			return ResponseEntity.ok(ApiResponse.success("登入成功", null));
+			UserDto userDto = new UserDto();
+			userDto.setUserName(cert.getUsername());
+			return ResponseEntity.ok(ApiResponse.success("登入成功", userDto));
 		} catch (CertException e) {
 			return ResponseEntity
 					.status(HttpStatus.UNAUTHORIZED)
