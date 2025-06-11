@@ -1,0 +1,43 @@
+因為在Outer3裡面找不到Inner3(區域變數裡變的區域變數)
+所以return的回傳值要找回來的時候必須是以Object的視角去尋找,
+(ex:obj.toString)    
+物件存活時間可能比她的方法還要久
+可以將變數變成常數以提高存活時間
+
+java8之後巢狀內的變數好像變成常數就可以跑出來了
+但不能再去更改它,因為它是變數
+
+
+
+
+因為只用一次所以使用匿名類別,不須建構inner3把它變成obj
+//obj是建構子
+return new obj(){
+	String s4 = "Amy";
+	public String toString(){
+		...
+		...
+	}
+}
+====例外處理=====
+try{
+    //受保護區塊(跑看看)
+}catch(ExceptionType e){
+    //錯誤處理
+    .....
+    .....
+}
+......
+......
+
+
+catch裡面要用System.err.pintln();
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+1. Entity 層
+Spring Data JPA 幫你管理 Entity（實體類別），並且將它們對應到資料庫表。
+
+你只要用 @Entity 標記類別，Spring 幫你做 ORM 映射。
+
+2. DAO 層（Repository）
+Spring Data JPA 幫你產生 Repository 介面實作，讓你不需要寫太多 SQL。
+
+只要定義介面繼承 JpaRepository 或 CrudRepository，Spring 會自動幫你生成查詢邏輯。
+
+3. Service 層
+Spring 沒有強制你寫 Service，但你通常會用 @Service 實作業務邏輯。
+
+Spring 提供交易管理（@Transactional），讓你管理交易行為。
+
+4. Controller 層
+Spring MVC 提供了強大的 Controller 支援，包含參數綁定、驗證、路由映射等功能。
+
+你只需用 @RestController 或 @Controller 定義控制器，Spring 幫你處理 HTTP 請求。
+
+5. DTO 層
+Spring 本身沒有自動生成 DTO，這通常是你自己定義的，用來封裝請求與回應資料。
+
+你可以利用工具（如 MapStruct）輔助在 Entity 與 DTO 之間轉換。
+
+
+
+Controller 負責與外界溝通（HTTP請求），Service 負責邏輯處理，Repository 負責資料存取，三者職責分明。
+=============================================================
+
+五、簡單流程舉例
+前端送 POST /rest/login，帶入 username & password
+
+LoginRestController 接到請求，呼叫 CertServiceImpl.getCert(username, password)
+
+CertServiceImpl 查資料庫比對密碼，成功後回傳 UserCert
+
+LoginRestController 把 UserCert 存進 session，回應登入成功給前端
+
+後續前端可以呼叫 /rest/check-login 查詢登入狀態，或 /rest/logout 登出
+
+================================================================
+
+比較點	             ||      CertServiceImpl (服務層)	                  ||               LoginRestController (控制器層)
+職責範圍	     ||  核心認證邏輯：驗證帳號密碼、回傳憑證(UserCert)   || 	處理 HTTP 請求與回應，管理 session，調用服務層
+主要功能	     ||  從資料庫找人、比對密碼雜湊、丟出例外、回傳憑證   || 	接收前端登入登出請求、設定session、封裝回應
+是否處理 HTTP	     ||           不涉及                                  ||	                  負責
+是否管理 Session     ||           不涉及                                  ||	                  負責
+是否操作資料庫	     ||        是（透過 UserRepository）                  ||	                    否
+是否直接跟前端互動   ||           否                                      ||	                    是
+錯誤處理方式         ||	 丟出例外給上層（controller）處理                 ||	捕捉例外，回應對應的 HTTP 狀態碼與訊息
+輸入輸出             ||  輸入帳號密碼，輸出 UserCert 憑證                 ||	輸入 HTTP 參數(session, username, password)，輸出 HTTP Response
+
+======================================================================
+網站金鑰    在向使用者顯示的 HTML 程式碼中使用這串網站金鑰。
+6LePW1orAAAAABfznmzmPajKMGla3jwx0GHN4kzi       
+
+密鑰    用這串密鑰來建立網站和 reCAPTCHA 之間的通訊。
+6LePW1orAAAAAJUE_GKcSq3tVL9JMvWgJgGKRuzB
+
+前端 (React) 加入 reCAPTCHA
+npm install react-google-recaptcha
+
+============================================
+購物車 之後FOREACH把全部抓出來
+	購物車ID
+	使用者ID
+	產品AㄉID
+	產品Aㄉ數量
+
+購物車中的明細
+	
+
+
+歷史紀錄
+	歷史紀錄ID
+	使用者ID
+	(產品BㄉID
+	產品Bㄉ數量) -> 陣列
+	完成交易時間點
+	
+
+
+
+
+ 
+

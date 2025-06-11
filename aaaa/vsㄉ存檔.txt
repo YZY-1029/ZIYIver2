@@ -1,0 +1,10 @@
+git add .
+git commit -m "05021656"
+git push -u origin main
+
+
+eㄉ
+
+git add .
+git commit -m "333"
+git push -u origin main

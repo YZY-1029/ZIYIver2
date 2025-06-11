@@ -1,0 +1,52 @@
+*先安裝路由器
+    npm install react-router-dom
+
+
+*在 main.jsx 增加
+    import { BrowserRouter } from 'react-router-dom';   
+跟  <React.StrictMode>
+	<BrowserRouter>
+	      <App />
+	</BrowserRouter>
+    </React.StrictMode>
+
+
+*在 App.jsx 貼上
+    import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+
+function App() {
+  return (
+    <div>
+      <nav>
+        <Link to="/">主页</Link> | <Link to="/about">关于</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+* 建立 
+import React from 'react';
+
+export default function Home() {
+  return <h1>这是主页</h1>;
+}
+
+* 建立
+import React from 'react';
+
+export default function About() {
+  return <h1>这是关于页面</h1>;
+}
+
