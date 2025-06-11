@@ -14,11 +14,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-// 使用者
+
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+// 使用者表
 public class User {
 
 	@Id

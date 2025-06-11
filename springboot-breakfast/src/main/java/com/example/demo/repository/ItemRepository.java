@@ -11,6 +11,5 @@ import com.example.demo.model.entity.Item;
 @Repository
 public interface ItemRepository extends JpaRepository<Item, Integer> {
 	
-
 	
 }

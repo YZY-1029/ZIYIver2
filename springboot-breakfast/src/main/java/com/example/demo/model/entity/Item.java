@@ -1,5 +1,7 @@
 package com.example.demo.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,6 +19,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+// 商品表
 public class Item {
 	
 	@Id
@@ -34,6 +37,11 @@ public class Item {
 	
 	@Column(length = 250, nullable = false)
 	private String breakfastUrl;
+	
+	@ManyToOne
+	@JoinColumn(name = "category_id")
+	@JsonBackReference
+	private ItemCategory category;
 	
 
 	
