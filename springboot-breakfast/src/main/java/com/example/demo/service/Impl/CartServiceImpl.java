@@ -1,6 +1,7 @@
 package com.example.demo.service.Impl;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,7 +49,6 @@ public class CartServiceImpl implements CartService {
 			cart.setUser(user);
 			cart.setCartItems(new ArrayList<>()); // 初始化購物車
 		}
-		
 		// 檢查購物車是否有相同的商品, 有ㄉ話直接更改數量
 		Optional<CartItem> existingItem = cart.getCartItems()
 											  .stream()
@@ -64,10 +64,30 @@ public class CartServiceImpl implements CartService {
 			cartItem.setCart(cart);          // 指向這ㄍ購物車
 			cartItem.setItem(item);			 // 設定商品
 			cartItem.setQuantity(quantity);  // 設定數量
-			 
+			System.out.println(quantity   +"111111111112222222222222222");
 		    cart.getCartItems().add(cartItem);    // cart 會自動對應 cartItem
 		}
 		
+		
 			cartRepository.save(cart);       // 然後一起存進資料庫
 	}
+
+
+
+	@Override
+	public List<CartItem> getCartItem(Integer userId) {
+		User user = userRepository.findById(userId)
+					.orElseThrow(() -> new RuntimeException("使用者不存在"));
+		
+		Cart cart = cartRepository.findCartByUser(user);
+		if(cart == null) {
+			return new ArrayList<>();
+		}
+		cart.getCartItems().size(); // 強制初始化避免懶加載
+		
+		return cart.getCartItems();
+	}
+	
+	
+	
 }

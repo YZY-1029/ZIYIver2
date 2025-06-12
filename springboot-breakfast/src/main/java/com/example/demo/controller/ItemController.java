@@ -28,7 +28,6 @@ public class ItemController {
 		return itemRepository.findAll();
 	}
 	
-	
 	@GetMapping("/{id}")
 	public ResponseEntity<Item> getItemById(@PathVariable Integer id) {
 		return itemRepository.findById(id)

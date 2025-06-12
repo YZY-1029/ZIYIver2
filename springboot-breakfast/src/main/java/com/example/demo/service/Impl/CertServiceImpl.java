@@ -35,7 +35,7 @@ public class CertServiceImpl implements CertService {
 			throw new PasswordInvalidException("密碼錯誤");
 		}
 		
-		// 3. 在前面比對嘉言過後的雜湊密碼為正確之後 這邊要給使用者發憑證
+		// 3. 在前面比對加鹽過後的雜湊密碼為正確之後 這邊要給使用者發憑證
 		UserCert userCert = new UserCert(user.getUserId(), user.getUserName(), user.getRole());
 		
 		return userCert;
