@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.hibernate.annotations.Collate;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -32,6 +34,7 @@ public class CartItem {
 	private Integer CartItemId;
 	
 	@ManyToOne
+	@JsonIgnore
 	@JoinColumn(name = "cart_id")
 	private Cart cart;
 	

@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -48,8 +49,16 @@ public class CartController {
     }
     
     @GetMapping
-    public List<CartItem> getCartItem(@RequestBody User userId) {
-		return cartService.getCartItem(null);
+    public ResponseEntity<List<CartItem>> getCartItem(HttpSession session) {
+    	UserCert userCert = (UserCert) session.getAttribute("userCert");
+    	
+    	if(userCert == null) {
+    		return ResponseEntity.status(401).build();
+    	}
+    	
+    	List<CartItem> items = cartService.getCartItem(userCert.getUserId());
+    	
+		return ResponseEntity.ok(items);
     }
     
     
