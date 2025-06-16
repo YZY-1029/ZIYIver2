@@ -87,6 +87,79 @@ public class CartServiceImpl implements CartService {
 		
 		return cart.getCartItems();
 	}
+
+
+
+	@Override
+	public void updatePlusQuantity(Integer userId, Integer itemId, Integer quantity) {
+		// 對應商品以及對應用戶
+		User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("使用者不存在"));
+		Item item = itemRepository.findById(itemId).orElseThrow(() -> new RuntimeException("商品不存在"));
+		
+		Cart cart = cartRepository.findByUser(user).orElse(null);
+		
+		Optional<CartItem> existingItem = cart.getCartItems()
+											  .stream()
+											  .filter( aaa -> aaa.getItem().getItemId().equals(itemId))
+											  .findFirst();
+		if (existingItem.isPresent()) {
+		CartItem cartItem = existingItem.get();
+		cartItem.setQuantity(quantity+1);
+		} else {
+		// 沒有相同 id 則可以直接新增caetItem到cart中
+		CartItem cartItem = new CartItem();
+		cartItem.setCart(cart);          // 指向這ㄍ購物車
+		cartItem.setItem(item);			 // 設定商品
+		cartItem.setQuantity(quantity);  // 設定數量
+		cart.getCartItems().add(cartItem);    // cart 會自動對應 cartItem
+		}
+		cartRepository.save(cart);       // 然後一起存進資料庫					
+	}
+
+
+
+	@Override
+	public void updateMinQuantity(Integer userId, Integer itemId, Integer quantity) {
+		// 對應商品以及對應用戶
+		User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("使用者不存在"));
+		Item item = itemRepository.findById(itemId).orElseThrow(() -> new RuntimeException("商品不存在"));
+		
+		Cart cart = cartRepository.findByUser(user).orElse(null);
+		
+		Optional<CartItem> existingItem = cart.getCartItems()
+											  .stream()
+											  .filter( aaa -> aaa.getItem().getItemId().equals(itemId))
+											  .findFirst();
+				
+		CartItem cartItem = existingItem.get();
+		cartItem.setQuantity(quantity-1);
+		cartRepository.save(cart);       // 然後一起存進資料庫	
+	}
+
+
+
+	@Override
+	public void deleteCartItem(Integer userId, Integer itemId) {
+		// 對應商品以及對應用戶
+		User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("使用者不存在"));
+		Item item = itemRepository.findById(itemId).orElseThrow(() -> new RuntimeException("商品不存在"));
+		
+		Cart cart = cartRepository.findByUser(user).orElse(null);
+		
+		Optional<CartItem> existingItem = cart.getCartItems()
+											  .stream()
+											  .filter( aaa -> aaa.getItem().getItemId().equals(itemId))
+											  .findFirst();
+		if(existingItem.isPresent()) {
+			CartItem cartItem = existingItem.get();     // 先讓 cartItem 指向 existingItem 原本存在的
+			cart.getCartItems().remove(cartItem);		// 刪除掉
+			cartItemRepository.delete(cartItem);		// 刪除乾淨
+			cartRepository.save(cart);					// 重新將刪除過後的資料存進資料庫
+		} else {
+			throw new RuntimeException("刪除失敗,購物車翁沒有此項商品");
+		}
+		
+	}
 	
 	
 	

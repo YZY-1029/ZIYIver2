@@ -10,4 +10,9 @@ public interface CartService {
 	
 	public List<CartItem> getCartItem(Integer userId);
 	
+	public void updatePlusQuantity(Integer userId, Integer itemId, Integer quantity);
+	
+	public void updateMinQuantity(Integer userId, Integer itemId, Integer quantity);
+	
+	public void deleteCartItem(Integer userId, Integer itemId);
 }
