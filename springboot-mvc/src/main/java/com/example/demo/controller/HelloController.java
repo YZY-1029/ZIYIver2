@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller  // 透過標註 讓spring對於這個來說是一個controller
 public class HelloController {
 	@GetMapping("/hello")
-	@ResponseBody   //回應純文字資料  // 回應給錢對ㄉ就是我return裡面的內容
+	@ResponseBody   //回應純文字資料  // 回應給前端ㄉ就是我return裡面的內容
 	public String hello() {
 		return " Hello " + new Date();
 	}

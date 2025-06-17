@@ -83,11 +83,7 @@
         <scope>test</scope>
     </dependency>
 
-		<dependency>
-			<groupId>JavaWeb</groupId>
-			<artifactId>JavaWeb</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>
