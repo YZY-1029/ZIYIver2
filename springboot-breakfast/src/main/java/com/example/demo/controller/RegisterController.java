@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import org.springframework.web.client.HttpClientErrorException.BadRequest;
 
 import com.example.demo.model.dto.UserDto;
 import com.example.demo.model.entity.User;
+import com.example.demo.service.EmailService;
 import com.example.demo.service.UserService;
 
 @RestController
@@ -24,6 +26,9 @@ public class RegisterController {
 	@Autowired
 	private UserService userService;
 	
+	@Autowired
+	private EmailService emailService;
+	
 	@PostMapping
 	public ResponseEntity<?> register(@RequestBody UserDto userDto) {
 		boolean result = userService.addUser(
@@ -31,14 +36,17 @@ public class RegisterController {
 				userDto.getUserEmail(),
 				userDto.getUserPassword()
 				);
+		
 		if (!result) {
 			return ResponseEntity
 				  .badRequest()
 				  .body(Map.of("message","此信箱已被註冊過"));
 		}
-		return ResponseEntity.ok(Map.of("message","註冊成功"));
-		
-		
+		// 這邊是自動寄信
+		String emailConfirmLink = "http://localhost:7899/verify/confirm?userName=" + userDto.getUserName();
+		System.out.println(userDto.getUserName());
+		emailService.sendEmail(userDto.getUserEmail(),emailConfirmLink);
+		return ResponseEntity.ok(Map.of("message","註冊成功請前往驗證"));
 	}
 	
 	

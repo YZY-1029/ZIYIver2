@@ -1,11 +1,12 @@
 package com.example.demo.service.Impl;
 
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.model.dto.UserDto;
+
 import com.example.demo.model.entity.User;
 import com.example.demo.repository.UserRepository;
 import com.example.demo.service.UserService;
@@ -46,6 +47,22 @@ public class UserServiceImpl implements UserService {
 		
 		userRepository.save(user);
 		return true;
+	}
+
+	
+	// 這邊是邏輯驗證
+	@Override
+	public boolean emailConfirmOk(String userName) {
+		if (userName == null) {
+			return false;
+		}
+		try {
+			int rowcount = userRepository.emailConfirmOk(userName);
+			return rowcount > 0;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 
 }

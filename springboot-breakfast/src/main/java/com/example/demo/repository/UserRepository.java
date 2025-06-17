@@ -1,11 +1,14 @@
 package com.example.demo.repository;
 
+import java.sql.PreparedStatement;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.model.entity.User;
 
@@ -31,5 +34,11 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 	// 取得使用者加鹽過後的密碼
 	@Query(value = "select user_password from user where user_id = :userId ", nativeQuery = true)
 	String getUserPassword(@Param("userId") Integer userId);
+	
+	// email 驗證成功後並修改將 comlpeted = true
+	@Modifying
+	@Transactional
+	@Query(value = "UPDATE user SET active = true Where user_name = :userName", nativeQuery = true)
+	int emailConfirmOk(String userName);
 
 }

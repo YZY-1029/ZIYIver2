@@ -9,9 +9,12 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class EmailService {
 	public static void main(String[] args) {
-		new EmailService().sendEmail("408430816@gms.tku.edu.tw", "http://localhost:8080/JavaWebCart/");
+		new EmailService().sendEmail("408430816@gms.tku.edu.tw", "http://localhost:7899/verify/confirm?userName");
 	}
 	// Google應用程式密碼
 	// 請參考此篇 https://www.yongxin-design.com/Article/10
