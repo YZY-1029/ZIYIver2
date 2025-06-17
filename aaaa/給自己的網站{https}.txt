@@ -1,0 +1,26 @@
+先到專案中的application.properties上ㄉ資料夾中 取得資料夾的路徑(右鍵點選properties)
+複製路徑
+到mdn先到e: 
+然後 cd 路徑
+然後輸入
+keytool -genkeypair -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650 -ext san=ip:127.0.0.1
+
+密碼輸入兩次
+6a 1y 
+
+到ecli refreash
+
+然後進入application.properties輸入
+server.port=8787
+server.ssl.key-store=classpath:keystore.p12
+server.ssl.key-store-password=你的密碼
+server.ssl.key-store-type=PKCS12
+server.ssl.key-alias=tomcat
+
+
+則之後的路徑就變成 https://your ip:8787/路徑
+
+
+
+
+
