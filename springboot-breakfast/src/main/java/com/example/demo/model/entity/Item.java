@@ -1,6 +1,9 @@
 package com.example.demo.model.entity;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -40,10 +43,6 @@ public class Item {
 	
 	@ManyToOne
 	@JoinColumn(name = "category_id")
-	@JsonBackReference
+	@JsonIgnoreProperties("items")  // 忽略掉 ItemCategory 裡面的 List<Item> items , 同時也必麵了無窮遞迴
 	private ItemCategory category;
-	
-
-	
-
 }

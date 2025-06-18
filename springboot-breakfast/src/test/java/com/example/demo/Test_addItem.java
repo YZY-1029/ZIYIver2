@@ -25,6 +25,7 @@ public class Test_addItem {
 		
 		ItemCategory cate1 = itemCategoryRepository.findById(1).orElse(null); // 主食
 		ItemCategory cate2 = itemCategoryRepository.findById(2).orElse(null); // 主食
+		ItemCategory cate3 = itemCategoryRepository.findById(3).orElse(null); // 主食
 		
 		// 商品1
 		Item item1 = new Item();
@@ -71,12 +72,66 @@ public class Test_addItem {
 		item6.setBreakfastUrl("images/green-tea.png");
 		item6.setCategory(cate2);
 		
+		
+		Item item7 = new Item();
+		item7.setItemName("牛肉漢堡");
+		item7.setItemPrice(85);
+		item7.setItemQty(66);
+		item7.setBreakfastUrl("images/beff-burger.png");
+		item7.setCategory(cate3);
+		
+		Item item8 = new Item();
+		item8.setItemName("魚堡");
+		item8.setItemPrice(80);
+		item8.setItemQty(40);
+		item8.setBreakfastUrl("images/fish-burger.png");
+		item8.setCategory(cate3);
+		
+		Item item9 = new Item();
+		item9.setItemName("薯條");
+		item9.setItemPrice(40);
+		item9.setItemQty(120);
+		item9.setBreakfastUrl("images/fry-potato.png");
+		item9.setCategory(cate1);
+		
+		Item item10 = new Item();
+		item10.setItemName("小籠包");
+		item10.setItemPrice(90);
+		item10.setItemQty(50);
+		item10.setBreakfastUrl("images/little-dumpling.png");
+		item10.setCategory(cate1);
+		
+		Item item11 = new Item();
+		item11.setItemName("豬肉漢堡");
+		item11.setItemPrice(80);
+		item11.setItemQty(100);
+		item11.setBreakfastUrl("images/pork-burger.png");
+		item11.setCategory(cate3);
+		
+		Item item12 = new Item();
+		item12.setItemName("御飯糰");
+		item12.setItemPrice(40);
+		item12.setItemQty(55);
+		item12.setBreakfastUrl("images/rice-ball.png");
+		item12.setCategory(cate1);
+		
+		
+		
+		
+		
+		
 		itemRepository.save(item1);
 		itemRepository.save(item2);
 		itemRepository.save(item3);
 		itemRepository.save(item4);
 		itemRepository.save(item5);
 		itemRepository.save(item6);
+		itemRepository.save(item7);
+		itemRepository.save(item8);
+		itemRepository.save(item9);
+		itemRepository.save(item10);
+		itemRepository.save(item11);
+		itemRepository.save(item12);
 	}
 	
 	

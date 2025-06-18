@@ -26,8 +26,13 @@ public class Test_addItemCategory {
 		ItemCategory cate2 = new ItemCategory();
 		cate2.setCategoryName("飲料");
 		
+		ItemCategory cate3 = new ItemCategory();
+		cate3.setCategoryName("漢堡");
+		
+		
 		itemCategoryRepository.save(cate1);
 		itemCategoryRepository.save(cate2);
+		itemCategoryRepository.save(cate3);
 	}
 	
 	

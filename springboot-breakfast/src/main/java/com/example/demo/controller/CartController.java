@@ -49,7 +49,7 @@ public class CartController {
             return ResponseEntity.badRequest().body("錯誤：" + e.getMessage());
         }
     }
-    
+    // 顯示購物車資訊
     @GetMapping
     public ResponseEntity<List<CartItem>> getCartItem(HttpSession session) {
     	UserCert userCert = (UserCert) session.getAttribute("userCert");
@@ -63,7 +63,7 @@ public class CartController {
 		return ResponseEntity.ok(items);
     }
     
-    
+    // 修改數量 +1
     @PostMapping("/update/plus")
     public ResponseEntity<String> updatePlusQuantity(@RequestBody CartDto request, HttpSession session) {
     	UserCert userCert = (UserCert)session.getAttribute("userCert");
@@ -78,20 +78,26 @@ public class CartController {
         }
     }
     
+    // 修改數量 -1
     @PostMapping("/update/min")
     public ResponseEntity<String> updateMinQuantity(@RequestBody CartDto request, HttpSession session) {
     	UserCert userCert = (UserCert)session.getAttribute("userCert");
     	if (userCert == null) {
     		return ResponseEntity.status(401).body("要先登入");
     	}
-    	try {
-            cartService.updateMinQuantity(userCert.getUserId(), request.getItemId(), request.getQuantity());
-            return ResponseEntity.ok("商品成功修改");
-        } catch (RuntimeException e) {
-            return ResponseEntity.badRequest().body("修改失敗：" + e.getMessage());
-        }
+    	else if(request.getQuantity()>1){
+	    	try {
+	            cartService.updateMinQuantity(userCert.getUserId(), request.getItemId(), request.getQuantity());
+	            return ResponseEntity.ok("商品成功修改");
+	        } catch (RuntimeException e) {
+	            return ResponseEntity.badRequest().body("修改失敗：" + e.getMessage());
+	        }
+    	}
+		return null;
     }
     
+    
+    // 清除該商品
     @DeleteMapping("/delete/{itemId}")
     public ResponseEntity<String> deleteCartItem(@PathVariable Integer itemId, HttpSession session) {
     	UserCert userCert = (UserCert) session.getAttribute("userCert");

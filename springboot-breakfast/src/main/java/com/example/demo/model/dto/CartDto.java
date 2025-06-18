@@ -8,4 +8,5 @@ public class CartDto {
 	private Integer userId;
 	private Integer itemId;
 	private Integer quantity;
+	private Integer categId;
 }
