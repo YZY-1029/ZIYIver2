@@ -1,5 +1,6 @@
 package com.example.demo.service.Impl;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -7,19 +8,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.example.demo.model.dto.UserCert;
 import com.example.demo.model.dto.UserDto;
+import com.example.demo.model.entity.Cart;
 import com.example.demo.model.entity.CartItem;
 import com.example.demo.model.entity.Item;
 import com.example.demo.model.entity.OrderItem;
-import com.example.demo.repository.CartItemRepository;
-import com.example.demo.repository.ItemRepository;
-import com.example.demo.repository.OrderTableRepository;
+import com.example.demo.model.entity.OrderTable;
+import com.example.demo.model.entity.User;
+import com.example.demo.repository.*;
 import com.example.demo.service.CheckOut;
+
 
 import jakarta.servlet.http.HttpSession;
 
 @Service
 public class CheckOutImpl implements CheckOut {
+
+    private final CartRepository cartRepository;
 
 	@Autowired
 	private CartItemRepository cartItemRepository;
@@ -30,32 +36,100 @@ public class CheckOutImpl implements CheckOut {
 	@Autowired
 	private ItemRepository itemRepository;
 	
-	// 結帳 -> 先確定庫存夠不夠 ->  不夠的話拋出例外
-	//          	 	 ->  夠的話將該使用者的購物車丟進資料庫中ㄉ歷史紀錄 -> 再將該使用者資料庫中ㄉ的購物車清除 -> 前端抓取該使用者資料庫中的歷史紀錄資料
+	@Autowired
+	private UserRepository userRepository;
+
+	
+
+    CheckOutImpl(CartRepository cartRepository) {
+        this.cartRepository = cartRepository;
+    }
+	
+	
+	// 結帳
 	@Override
 	@Transactional
-	public void checkOut(HttpSession session) {
-		// 1. 查購物車
-		List<CartItem> cartItem = cartItemRepository.findAll();
-		// 2. 扣庫存   商品 qty 跟 cartItem.quantity 去比
-		for(CartItem e : cartItem) {
+	public List<CartItem> checkOut(HttpSession session) {
+		
+		// 先找使用者
+		UserCert userCert = (UserCert) session.getAttribute("userCert");
+		if (userCert == null) {
+			throw new RuntimeException("請先登入再結帳");
+		}
+		Integer userId = userCert.getUserId();
+		User user = userRepository.findById(userId)
+				.orElseThrow(() -> new RuntimeException("找不到購物車"));
+		
+		
+		// 取得購物車內ㄉ商品
+		Cart cart = cartRepository.findByUser(user)
+				.orElseThrow(() -> new RuntimeException("找不到使用者的購物車"));
+		
+		List<CartItem> cartItems = cart.getCartItems();
+		if (cartItems.isEmpty()) {
+			throw new RuntimeException("找不到購物車,或購物車是空的");
+		}
+		
+		// 檢查商品的庫存是否足夠
+		for (CartItem cartItem : cartItems) {
+			Item item = cartItem.getItem();
 			
-			Optional<Item> opt = itemRepository.findById(e.getItem().getItemId());
-			if(!opt.isPresent()) {
-				throws new RuntimeException("找不到產品");
+			if(item.getItemQty() < cartItem.getQuantity()) {
+				throw new RuntimeException("商品" + item.getItemName() + "庫存不夠");
 			}
 		}
 		
+		// 足夠的話扣數量
+		for (CartItem cartItem : cartItems ) {
+			Item item = cartItem.getItem();
+			
+			item.setItemQty(item.getItemQty() - cartItem.getQuantity());     // 商品庫存變成 商品庫存 - 購物數量
+			itemRepository.save(item);    // 將扣除好的商品 存到itemRepository 
+		}
+		
+		// 再將購物車的東西存到 歷史清單
+		OrderTable order = new OrderTable();
+		order.setUser(cartItems.get(0).getCart().getUser());
+		order.setOrderTime(LocalDateTime.now());
+		
+		// 存進去
+		for( CartItem cartItem : cartItems ) {
+			OrderItem orderItem = new OrderItem();
+			orderItem.setItem(cartItem.getItem());
+			orderItem.setQuantity(cartItem.getQuantity());
+			orderItem.setItemPrice(cartItem.getItem().getItemPrice());
+			
+			order.addOrderItem(orderItem);
+		}
+		
+		orderTableRepository.save(order);
 		
 		
-		// 3. 存到歷史訂單
+		// 將購物車清空
+		cart.getCartItems().clear();
+		cartRepository.save(cart);
 		
-		
-		
-		// 4. 清空購物車
+		return cartItems;
 		
 		
 		
 	}
 
+	// 加到歷史清單裡面
+	@Override
+	public List<OrderTable> getOrderHistory(HttpSession session) {
+		UserCert userCert = (UserCert) session.getAttribute("userCert");
+		if( userCert == null ) {
+			throw new RuntimeException("請先登入才能查看歷史訂單");
+		}
+		
+		Integer userId = userCert.getUserId();
+		User user = userRepository.findById(userId)
+				.orElseThrow(() -> new RuntimeException("找不到使用者"));
+		
+		return orderTableRepository.findByUser(user);
+	
+	
+	}
 }
+

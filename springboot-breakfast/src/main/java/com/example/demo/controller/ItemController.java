@@ -23,6 +23,7 @@ public class ItemController {
 	@Autowired
 	private ItemRepository itemRepository;
 	
+	
 	@GetMapping
 	public List<Item> getAllItems() {
 		return itemRepository.findAll();

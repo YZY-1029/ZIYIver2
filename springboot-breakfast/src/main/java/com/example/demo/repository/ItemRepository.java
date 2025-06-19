@@ -1,6 +1,6 @@
 package com.example.demo.repository;
 
-import java.lang.foreign.Linker.Option;
+
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -16,6 +16,6 @@ public interface ItemRepository extends JpaRepository<Item, Integer> {
 	
 	
 	
-	@Query(value = "select item_qty from item where item_name = :itemName ", nativeQuery = true)
-	Integer findByItemId(Item itemId);
+	@Query(value = "select item_qty from item where item_id = :itemId ", nativeQuery = true)
+	Integer findByItemId(@Param("itemId") Item itemId);
 }

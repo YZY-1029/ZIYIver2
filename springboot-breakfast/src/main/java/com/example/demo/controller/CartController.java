@@ -44,7 +44,7 @@ public class CartController {
     	}
     	try {
             cartService.addItemToCart(userCert.getUserId(), request.getItemId(), request.getQuantity());
-            return ResponseEntity.ok("商品成功加入購物車");
+            return ResponseEntity.ok("商品"+request.getQuantity()+"個 成功加入購物車");
         } catch (RuntimeException e) {
             return ResponseEntity.badRequest().body("錯誤：" + e.getMessage());
         }

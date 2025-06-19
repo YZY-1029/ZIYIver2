@@ -73,7 +73,7 @@ public class CartServiceImpl implements CartService {
 	}
 
 
-
+	// 從資料庫抓取我的商品
 	@Override
 	public List<CartItem> getCartItem(Integer userId) {
 		User user = userRepository.findById(userId)
@@ -89,7 +89,7 @@ public class CartServiceImpl implements CartService {
 	}
 
 
-
+	// 在購物車中讓商品數量 +1
 	@Override
 	public void updatePlusQuantity(Integer userId, Integer itemId, Integer quantity) {
 		// 對應商品以及對應用戶
@@ -117,7 +117,7 @@ public class CartServiceImpl implements CartService {
 	}
 
 
-
+	// 在購物車中讓商品數量 -1
 	@Override
 	public void updateMinQuantity(Integer userId, Integer itemId, Integer quantity) {
 		// 對應商品以及對應用戶

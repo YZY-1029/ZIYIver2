@@ -1,9 +1,14 @@
 package com.example.demo.model.entity;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -30,8 +35,19 @@ public class OrderTable {
 	@JoinColumn(name = "user_id")
 	private User user; 
 	
-	@OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "order", cascade = CascadeType.ALL, fetch = FetchType.EAGER) // 避免覽加載
 	private List<OrderItem> orderItems;
+	
+	private LocalDateTime orderTime;
+	
+	   // xxxx
+    public void addOrderItem(OrderItem item) {
+        if (orderItems == null) {
+            orderItems = new ArrayList<>();
+        }
+        orderItems.add(item);
+        item.setOrder(this);
+    }
 	
 	
 

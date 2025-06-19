@@ -30,6 +30,6 @@ public class ItemCategory {
     private String categoryName;
 
     @OneToMany(mappedBy = "category")
-//    @JsonManagedReference             // 避免在抓資料的時候無窮遞迴
+//  @JsonManagedReference             // 避免在抓資料的時候無窮遞迴
     private List<Item> items;
 }

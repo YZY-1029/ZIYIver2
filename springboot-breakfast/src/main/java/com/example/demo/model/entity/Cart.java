@@ -25,14 +25,14 @@ public class Cart {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer CartId;
+	private Integer cartId;
 	
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	private User user;
 	
 	@OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)  // 避免懶加載
-	private List<CartItem> CartItems;
+	private List<CartItem> cartItems;
 	
 //	@Column(nullable = false)
 //	private Integer quantity;
