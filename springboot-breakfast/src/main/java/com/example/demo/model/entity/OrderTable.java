@@ -7,6 +7,7 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -39,6 +40,9 @@ public class OrderTable {
 	private List<OrderItem> orderItems;
 	
 	private LocalDateTime orderTime;
+	
+	@Column(nullable = false)
+	private Integer totalPrice;
 	
 	   // xxxx
     public void addOrderItem(OrderItem item) {

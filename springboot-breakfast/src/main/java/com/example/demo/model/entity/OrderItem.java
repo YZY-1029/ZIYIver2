@@ -2,6 +2,8 @@ package com.example.demo.model.entity;
 
 
 
+import java.time.LocalDateTime;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
@@ -40,6 +42,7 @@ public class OrderItem {
 	
 	@Column(nullable = false)
 	private Integer itemPrice;
+
 	
 	
 }

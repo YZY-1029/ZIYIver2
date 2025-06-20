@@ -48,6 +48,8 @@ public class CheckOutController {
 	@GetMapping("/history")
 	public List<OrderTable> getOrderHistory(HttpSession session) {
 		return checkOut.getOrderHistory(session);
+		
+		
 	}
 
 }

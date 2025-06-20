@@ -80,17 +80,20 @@ public class CheckOutImpl implements CheckOut {
 		}
 		
 		// 足夠的話扣數量
-		for (CartItem cartItem : cartItems ) {
+		for( CartItem cartItem : cartItems ) {
 			Item item = cartItem.getItem();
 			
 			item.setItemQty(item.getItemQty() - cartItem.getQuantity());     // 商品庫存變成 商品庫存 - 購物數量
 			itemRepository.save(item);    // 將扣除好的商品 存到itemRepository 
 		}
 		
-		// 再將購物車的東西存到 歷史清單
+		
+		// 再將購物車的東西存到 orderTable裡 歷史清單
 		OrderTable order = new OrderTable();
 		order.setUser(cartItems.get(0).getCart().getUser());
 		order.setOrderTime(LocalDateTime.now());
+		
+		Integer totalPrice = 0;
 		
 		// 存進去
 		for( CartItem cartItem : cartItems ) {
@@ -99,9 +102,11 @@ public class CheckOutImpl implements CheckOut {
 			orderItem.setQuantity(cartItem.getQuantity());
 			orderItem.setItemPrice(cartItem.getItem().getItemPrice());
 			
+			totalPrice += cartItem.getItem().getItemPrice() * cartItem.getQuantity();
+			
 			order.addOrderItem(orderItem);
 		}
-		
+		order.setTotalPrice(totalPrice);
 		orderTableRepository.save(order);
 		
 		
