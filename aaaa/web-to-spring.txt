@@ -80,7 +80,7 @@ npm install react-google-recaptcha
 	完成交易時間點
 	
 
-
+JMeter 可以用來作壓力測試
 
 
  
