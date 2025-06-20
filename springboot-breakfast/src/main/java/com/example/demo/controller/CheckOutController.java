@@ -30,13 +30,13 @@ public class CheckOutController {
 	
 	// 結帳
 	@PostMapping
-	public ResponseEntity<String> checkOut(HttpSession session ) {
+	public ResponseEntity<String> checkOut(@RequestBody CartCheckOutDto checkoutNote, HttpSession session ) {
 		UserCert userCert = (UserCert) session.getAttribute("userCert");
 		if (userCert == null) {
     		return ResponseEntity.status(401).body("要先登入");
     	}
 		try {
-			checkOut.checkOut(session);
+			checkOut.checkOut(session, checkoutNote.getNote());
 			return ResponseEntity.ok("結帳成功~");
 		} catch (RuntimeException e) {
 			return ResponseEntity.badRequest().body("結帳失敗" + e.getMessage());

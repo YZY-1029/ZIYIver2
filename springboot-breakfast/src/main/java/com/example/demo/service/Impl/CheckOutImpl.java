@@ -49,7 +49,7 @@ public class CheckOutImpl implements CheckOut {
 	// 結帳
 	@Override
 	@Transactional
-	public List<CartItem> checkOut(HttpSession session) {
+	public List<CartItem> checkOut(HttpSession session, String note) {
 		
 		// 先找使用者
 		UserCert userCert = (UserCert) session.getAttribute("userCert");
@@ -87,11 +87,11 @@ public class CheckOutImpl implements CheckOut {
 			itemRepository.save(item);    // 將扣除好的商品 存到itemRepository 
 		}
 		
-		
 		// 再將購物車的東西存到 orderTable裡 歷史清單
 		OrderTable order = new OrderTable();
 		order.setUser(cartItems.get(0).getCart().getUser());
 		order.setOrderTime(LocalDateTime.now());
+		order.setNote(note);
 		
 		Integer totalPrice = 0;
 		
@@ -115,9 +115,6 @@ public class CheckOutImpl implements CheckOut {
 		cartRepository.save(cart);
 		
 		return cartItems;
-		
-		
-		
 	}
 
 	// 加到歷史清單裡面
@@ -133,8 +130,6 @@ public class CheckOutImpl implements CheckOut {
 				.orElseThrow(() -> new RuntimeException("找不到使用者"));
 		
 		return orderTableRepository.findByUser(user);
-	
-	
 	}
 }
 

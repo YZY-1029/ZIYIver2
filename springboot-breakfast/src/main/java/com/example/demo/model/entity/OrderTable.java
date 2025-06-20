@@ -44,6 +44,9 @@ public class OrderTable {
 	@Column(nullable = false)
 	private Integer totalPrice;
 	
+	@Column(length = 50, name = "note")
+	private String note;
+	
 	   // xxxx
     public void addOrderItem(OrderItem item) {
         if (orderItems == null) {

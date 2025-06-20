@@ -4,5 +4,5 @@ import lombok.Data;
 
 @Data
 public class CartCheckOutDto {
-	private Integer cartId;
+	private String note;
 }
