@@ -29,10 +29,14 @@ public class Test_addItemCategory {
 		ItemCategory cate3 = new ItemCategory();
 		cate3.setCategoryName("漢堡");
 		
+		ItemCategory cate4 = new ItemCategory();
+		cate4.setCategoryName("蛋餅");
+		
 		
 		itemCategoryRepository.save(cate1);
 		itemCategoryRepository.save(cate2);
 		itemCategoryRepository.save(cate3);
+		itemCategoryRepository.save(cate4);
 	}
 	
 	
